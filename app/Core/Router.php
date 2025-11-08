@@ -1,5 +1,5 @@
 <?php
-namespace Core;
+namespace App\Core;
 
 class Router
 {
@@ -45,7 +45,7 @@ class Router
     {
         foreach ($this->routes as $route) {
             if ($route['uri'] === $uri && $route['method'] === $method) {
-                require __DIR__ . "/../resources/" . $route['controller'];
+                require __DIR__ . "/../../resources/" . $route['controller'];
             }
         }
 

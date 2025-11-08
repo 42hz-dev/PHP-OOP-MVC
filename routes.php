@@ -1,3 +1,6 @@
 <?php
+// client
 $router->get('/', 'index.php');
-$router->get('/about', 'about.php');
+
+// admin
+$router->get('/admin', 'admin/index.php');
